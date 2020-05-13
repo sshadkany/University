@@ -1,0 +1,223 @@
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layoutDescription="@xml/detail_2_animation"
+    tools:showPaths="false">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/headerBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/corner_radius_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_arc_height="70dp"
+        app:shape_arc_position="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerBackColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerPattern"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5" />
+
+        </FrameLayout>
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <FrameLayout
+        android:id="@+id/myframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_2"
+        app:layout_constraintRight_toRightOf="@id/guideline_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/header2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nav_1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/sgkara_regular"
+            android:gravity="center|right"
+            android:maxLines="1"
+            android:text="یک دو سه چهار "
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+
+
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/header2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/corner_radius_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_arc_height="70dp"
+        app:shape_arc_position="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/header2FrontColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gold"
+                android:scaleType="centerCrop" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/header2FrontImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.1"
+                android:scaleType="centerCrop" />
+
+        </FrameLayout>
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <FrameLayout
+        android:id="@+id/myframe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/header2"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_2"
+        app:layout_constraintRight_toRightOf="@id/guideline_1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nav_1_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/sgkara_regular"
+            android:gravity="center|right"
+            android:maxLines="1"
+            android:text="یک دو سه چهار "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/corner_radius_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_arc_height="70dp"
+        app:shape_arc_position="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerFrontColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerFrontImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.1"
+                android:scaleType="centerCrop" />
+
+        </FrameLayout>
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="23sp"
+
+        android:gravity="center"
+        android:shadowColor="#3E3E3E"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        app:fontFamily="@font/shin"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:rotation="180"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons_light_back"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/large_text">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

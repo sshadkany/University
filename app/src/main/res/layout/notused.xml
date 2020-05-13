@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+</LinearLayout>
+
+    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:fitsSystemWindows="true"-->
+    <!--    tools:context=".DetailActivity">-->
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:id="@+id/app_bar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/app_bar_height"-->
+    <!--        android:fitsSystemWindows="true"-->
+    <!--        android:theme="@style/AppTheme.AppBarOverlay">-->
+
+    <!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+    <!--            android:id="@+id/toolbar_layout"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:fitsSystemWindows="true"-->
+    <!--            app:contentScrim="?attr/colorPrimary"-->
+    <!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+    <!--            app:toolbarId="@+id/toolbar">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/expandedImage"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="200dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@drawable/a"-->
+    <!--                app:layout_collapseMode="parallax"-->
+    <!--                app:layout_collapseParallaxMultiplier="0.7" />-->
+
+    <!--            <androidx.appcompat.widget.Toolbar-->
+    <!--                android:id="@+id/toolbar"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="?attr/actionBarSize"-->
+    <!--                android:paddingEnd="8dp"-->
+    <!--                android:paddingStart="8dp"-->
+    <!--                app:layout_collapseMode="pin"-->
+    <!--                app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
+
+    <!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/fab_margin"-->
+    <!--        app:layout_anchor="@id/app_bar"-->
+    <!--        app:layout_anchorGravity="bottom|end"-->
+    <!--        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+    <!--&lt;!&ndash;    <include&ndash;&gt;-->
+    <!--&lt;!&ndash;        layout="@layout/content_detail" />&ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/backdetail"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginTop="-18dp"-->
+    <!--        android:background="@drawable/roundshape"-->
+    <!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--        tools:context=".DetailActivity"-->
+    <!--        tools:showIn="@layout/activity_detail">-->
+
+    <!--        <androidx.core.widget.NestedScrollView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:fillViewport="true">-->
+
+    <!--            <com.ramotion.foldingcell.FoldingCell-->
+    <!--                android:id="@+id/folding_cell"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_margin="8dp">-->
+
+    <!--                <androidx.cardview.widget.CardView-->
+    <!--                    android:id="@+id/cell_content_view"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@android:color/holo_green_dark"-->
+    <!--                    app:cardCornerRadius="@dimen/corner_radius_12"-->
+    <!--                    android:visibility="gone">-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="250dp" />-->
+    <!--                </androidx.cardview.widget.CardView>-->
+
+    <!--                <androidx.cardview.widget.CardView-->
+    <!--                    android:id="@+id/cell_title_view"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:elevation="6dp"-->
+    <!--                    app:cardCornerRadius="@dimen/corner_radius_12">-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="100dp"-->
+    <!--                        android:background="@android:color/holo_blue_dark"-->
+    <!--                        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />-->
+    <!--                </androidx.cardview.widget.CardView>-->
+
+    <!--            </com.ramotion.foldingcell.FoldingCell>-->
+
+    <!--        </androidx.core.widget.NestedScrollView>-->
+
+    <!--    </LinearLayout>-->
+
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

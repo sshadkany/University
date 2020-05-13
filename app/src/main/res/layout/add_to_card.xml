@@ -1,0 +1,38 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_me"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorA1">
+
+        <TextView
+            android:id="@+id/cell_content_text_card"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/colorA2"
+            android:fontFamily="@font/sgkara_light"
+            android:gravity="right|center_vertical"
+            android:text="text"
+            android:textColor="@color/colorA4"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="false"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorA2"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icons_light_next"
+            tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

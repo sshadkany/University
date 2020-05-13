@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:orientation="vertical">
+
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:id="@+id/folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:id="@+id/cell_content_view"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:visibility="gone"-->
+        <!--                app:cardCornerRadius="@dimen/corner_radius_12">-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            app:cardCornerRadius="@dimen/corner_radius_12"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/add_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/fc_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/cell_content_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/colorA1"
+                        android:fontFamily="@font/sgkara_semibold"
+                        android:gravity="center"
+                        android:text="text"
+                        android:textColor="@color/colorA4"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp"
+                        android:rotation="90"
+                        app:srcCompat="@drawable/icons_light_next"
+                        tools:ignore="VectorDrawableCompat" />
+
+                </RelativeLayout>
+
+                <!--                                <RelativeLayout-->
+                <!--                                    android:layout_width="match_parent"-->
+                <!--                                    android:layout_height="match_parent">-->
+
+                <!--                                    <TextView-->
+                <!--                                        android:id="@+id/cell_content_text"-->
+                <!--                                        android:layout_width="match_parent"-->
+                <!--                                        android:layout_height="100dp"-->
+                <!--                                        android:layout_marginRight="98dp"-->
+                <!--                                        android:background="@color/colorA2"-->
+                <!--                                        android:fontFamily="@font/vazir_bold"-->
+                <!--                                        android:gravity="right|center_vertical"-->
+                <!--                                        android:text="text"-->
+                <!--                                        android:textColor="@color/colorA4"-->
+                <!--                                        android:textSize="18sp" />-->
+
+                <!--                                    <ImageView-->
+                <!--                                        android:layout_width="50dp"-->
+                <!--                                        android:layout_height="100dp"-->
+                <!--                                        android:layout_alignParentTop="true"-->
+                <!--                                        android:layout_alignParentEnd="true"-->
+                <!--                                        android:layout_marginEnd="48dp"-->
+                <!--                                        android:background="@color/colorA2"-->
+                <!--                                        android:rotation="180"-->
+                <!--                                        app:srcCompat="@drawable/icons_light_next"-->
+                <!--                                        tools:ignore="VectorDrawableCompat" />-->
+
+                <!--                                </RelativeLayout>-->
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:id="@+id/cell_title_view"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:elevation="6dp"-->
+        <!--                android:visibility="visible"-->
+        <!--                app:cardCornerRadius="@dimen/corner_radius_12">-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            app:cardCornerRadius="@dimen/corner_radius_12"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/cell_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorA1"
+                    android:fontFamily="@font/vazir_bold"
+                    android:gravity="center"
+                    android:text="text"
+                    android:textColor="@color/colorA4"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/icons_light_next"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </com.ramotion.foldingcell.FoldingCell>
+
+</FrameLayout>

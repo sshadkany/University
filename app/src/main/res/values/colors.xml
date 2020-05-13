@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <color name="color_primary">#212121</color>-->
+<!--    <color name="color_primary_variant">#000000</color>-->
+<!--    <color name="color_on_primary">#FFFFFF</color>-->
+<!--    <color name="color_secondary">#2962FF</color>-->
+<!--    <color name="color_secondary_variant">#0039CB</color>-->
+<!--    <color name="color_on_secondary">#FFFFFF</color>-->
+<!--    <color name="color_error">#F44336</color>-->
+<!--    <color name="color_on_error">#FFFFFF</color>-->
+<!--    <color name="color_surface">#FFFFFF</color>-->
+<!--    <color name="color_on_surface">#000000</color>-->
+<!--    <color name="color_background">#FAFAFA</color>-->
+<!--    <color name="color_on_background">#000000</color>-->
+<!--    <color name="color_status_bar">#000000</color>-->
+    <color name="colorPrimary">#454F63</color>
+    <color name="colorPrimaryDark">#21243d</color>
+    <color name="colorAccent">#ff7c7c</color>
+    <color name="colorAccent_y">#ffd082</color>
+    <color name="colorAccent_b">#88e1f2</color>
+
+    <color name="colorA1">#2A2E43</color>
+    <color name="colorA2">#454F63</color>
+    <color name="colorA3">#78849E</color>
+    <color name="colorA4">#FFFFFF</color>
+
+    <color name="colorB1">#665EFF</color>
+    <color name="colorB2">#5773FF</color>
+    <color name="colorB3">#3497FD</color>
+    <color name="colorB4">#3ACCE1</color>
+
+    <color name="colorC1_purple">#C840E9</color>
+    <color name="colorC2_pink">#FF4F9A</color>
+    <color name="colorC3_orange">#FF9057</color>
+    <color name="colorC4_yellow">#FFB900</color>
+
+    <color name="background_color">#3ACCE1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_grey">#424242</color>
+    <color name="light_grey">#D5D7DB</color>
+    <color name="button_grey">#757575</color>
+
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name="bgGradientStart">#000000</color>
+    <color name="bgGradientEnd">#d8000000</color>
+    <color name="bgSolidDark">#55000000</color>
+
+    <color name="gold">#bfa880</color>
+
+</resources>

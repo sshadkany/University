@@ -1,0 +1,158 @@
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/detail1_scene"
+    tools:showPaths="false">
+
+
+    <!--    <com.github.florent37.shapeofview.shapes.RoundRectView-->
+    <!--        android:id="@+id/header"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="200dp"-->
+
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:shape_roundRect_bottomLeftRadius="10dp"-->
+    <!--        app:shape_roundRect_bottomRightRadius="10dp">-->
+
+    <!--        <androidx.appcompat.widget.AppCompatImageView-->
+    <!--            android:id="@+id/headerImage"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:scaleType="centerCrop"-->
+    <!--            app:srcCompat="@drawable/a" />-->
+
+    <!--    </com.github.florent37.shapeofview.shapes.RoundRectView>-->
+
+    <!--    <com.github.florent37.shapeofview.shapes.RoundRectView-->
+    <!--        android:id="@+id/header2"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:elevation="4dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/header"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:shape_roundRect_bottomLeftRadius="10dp"-->
+    <!--        app:shape_roundRect_bottomRightRadius="200dp">-->
+
+    <!--        <androidx.appcompat.widget.AppCompatImageView-->
+    <!--            android:id="@+id/headerImage2"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="@color/colorA1"-->
+    <!--            android:scaleType="centerCrop" />-->
+
+    <!--    </com.github.florent37.shapeofview.shapes.RoundRectView>-->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/detail1_gradient"/>
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/headerBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/corner_radius_12"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_arc_height="70dp"
+        app:shape_arc_position="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerBackColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerPattern"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5" />
+
+        </FrameLayout>
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/corner_radius_12"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_arc_height="70dp"
+        app:shape_arc_position="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerFrontColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerFrontImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.1"
+                android:scaleType="centerCrop" />
+
+        </FrameLayout>
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detail_recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/gold"
+        android:textSize="8sp"
+        app:fontFamily="@font/sgkara_semibold"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:rotation="180"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons_light_back"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,69 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    app:cardBackgroundColor="@color/gold"
+    app:cardCornerRadius="@dimen/corner_radius_12"
+    app:cardElevation="5dp">
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shape_roundRect_borderColor="@color/gold"
+        app:shape_roundRect_borderWidth="5dp"
+        app:shape_roundRect_bottomLeftRadius="@dimen/corner_radius_12"
+        app:shape_roundRect_bottomRightRadius="@dimen/corner_radius_12"
+        app:shape_roundRect_topLeftRadius="@dimen/corner_radius_12"
+        app:shape_roundRect_topRightRadius="@dimen/corner_radius_12">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/card_image"
+                style="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/a"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_image">
+
+                <TextView
+                    android:id="@+id/card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/card_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="TextView"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+</androidx.cardview.widget.CardView>
