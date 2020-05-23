@@ -21,10 +21,21 @@ public class DetailActivity2 extends AppCompatActivity {
         int i2 = getIntent().getIntExtra("i2", 0);
         int i3 = getIntent().getIntExtra("i3", 0);
 //        Data =  MyData.getAllData(this).get(i1).getSubData().get(i2).getSubData().get(i3);
-        Data = MyData.getAllData(this).get(i1);
-        String p1 = Data.name;
-        String p2 = Data.getSubData().get(i2).name;
-        Data = Data.getSubData().get(i2).getSubData().get(i3);
+
+        // for 2 level data and 3 level data difference
+        String p1 = "";
+        String p2 = "";
+        if (i3 != 1000) {
+            Data = MyData.getAllData(this).get(i1);
+            p1 = Data.name;
+            p2 = Data.getSubData().get(i2).name;
+            Data = Data.getSubData().get(i2).getSubData().get(i3);
+        }else {
+            Data = MyData.getAllData(this).get(i1);
+            p1 = this.getResources().getString(R.string.app_name);
+            p2 = Data.name;
+            Data = Data.getSubData().get(i2);
+        }
         //**************************************
         AppCompatTextView headerText = findViewById(R.id.headerText);
         AppCompatTextView nav1 = findViewById(R.id.nav_1_text);

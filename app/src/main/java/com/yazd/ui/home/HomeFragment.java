@@ -109,11 +109,11 @@ public class HomeFragment extends Fragment{
 //            String transitionName = getString(R.string.transition);
 
 //            ActivityOptionsCompat options =
-//
-//                    ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(),
-//                            viewById,   // Starting view
-//                            "sajjad"    // The String
-//                    );
+////
+////                    ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(),
+////                            viewById,   // Starting view
+////                            "sajjad"    // The String
+////                    );
 //            ActivityCompat.startActivity(getActivity(), myIntent, options.toBundle());
             ((Main2Activity)getActivity()).startNextActivty(viewById,getpositiononlist(v));
             //*******

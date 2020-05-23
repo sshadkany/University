@@ -58,16 +58,22 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.ViewHolder
                 add_view.addView(inflate);
             }
 
+        }else {
+            holder.title1.setOnClickListener(new onInnerItemClick(position));
+            holder.title2.setOnClickListener(new onInnerItemClick(position));
         }
     }
 
     public class onInnerItemClick implements View.OnClickListener {
         ArrayList<DataModel> subData;
         int position;
-        int i;
+        int i=1000;
         onInnerItemClick(ArrayList<DataModel> subData, int position, int i){
             this.i = i;
             this.subData = subData;
+            this.position=position;
+        }
+        onInnerItemClick(int position){
             this.position=position;
         }
 
