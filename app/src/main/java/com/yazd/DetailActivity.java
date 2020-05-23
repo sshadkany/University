@@ -48,12 +48,14 @@ public class DetailActivity extends AppCompatActivity implements DetailAdapter.I
         });
         //***************************************
         // set up the RecyclerView
-        RecyclerView recyclerView = findViewById(R.id.detail_recyclerView);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        adapter = new DetailAdapter(this, Data.subData,i);
-        adapter.setClickListener(this);
-        recyclerView.setAdapter(adapter);
+        if (Data.getSubDataCount() > 0) {
+            RecyclerView recyclerView = findViewById(R.id.detail_recyclerView);
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+            recyclerView.setLayoutManager(linearLayoutManager);
+            adapter = new DetailAdapter(this, Data.subData, i);
+            adapter.setClickListener(this);
+            recyclerView.setAdapter(adapter);
+        }
         //******************header back*********************
         setRepeatingBackground(findViewById(R.id.headerPattern));
         setRepeatingBackground(findViewById(R.id.imageView7));
